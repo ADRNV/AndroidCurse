@@ -2,8 +2,15 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigateto"
-    app:startDestination="@id/loginFragment">
+    android:id="@+id/navgraph"
+    app:startDestination="@id/loginFragment"
+    tools:ignore="MissingDefaultResource">
+    <fragment android:id="@+id/myHomeFragment"
+        android:name="com.example.sampleapp.presentation.login.LoginFragment"
+        android:label="fragment_my_home">
+
+    </fragment>
+
 
     <fragment
         android:id="@+id/loginFragment"
