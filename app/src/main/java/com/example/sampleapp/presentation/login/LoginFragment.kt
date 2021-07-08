@@ -30,7 +30,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun onClickLoginButton(){
-        Navigation.findNavController(binding.root).navigate(R.id.action_loginFragment_to_welcomeFragment)
+        Navigation.findNavController(binding.root).navigate(R.id.action_loginFragment2_to_welcomeFragment2)
     }
 
 
