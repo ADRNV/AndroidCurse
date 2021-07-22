@@ -17,12 +17,12 @@ class LoginFragmentViewModel(private val loginModel:LoginModel) : ViewModel() {
         status.value = false
     }
 
-    fun getAccoutData(login:String, password: String){
+    fun getAccoutdata(login:String, password: String){
         this.login.value = login
         this.password.value = password
     }
 
-    fun getValidation(){
+    fun validate(){
         viewModelScope.launch {
             val validation = loginModel.signIn(login.value!!, password.value!!)
             status.value = validation.signed

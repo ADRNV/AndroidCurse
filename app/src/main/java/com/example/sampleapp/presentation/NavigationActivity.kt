@@ -18,14 +18,7 @@ class NavigationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityNavigationBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-
-
-        val navController = findNavController(R.id.nav_host_fragment_content_navigation)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setContentView(R.layout.activity_navigation)
 
 
     }

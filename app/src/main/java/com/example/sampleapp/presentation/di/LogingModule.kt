@@ -5,7 +5,10 @@ import com.example.sampleapp.presentation.data.IAuthicationRepository
 import com.example.sampleapp.presentation.data.IAuthicationService
 import com.example.sampleapp.presentation.data.StubAuthicationService
 import com.example.sampleapp.presentation.domain.LoginModel
+import com.example.sampleapp.presentation.domain.SignInResponse
 import com.example.sampleapp.presentation.presentation.login.LoginFragmentViewModel
+import com.example.sampleapp.presentation.presentation.wellcome.WelcomeFragment
+import org.koin.androidx.compose.get
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
