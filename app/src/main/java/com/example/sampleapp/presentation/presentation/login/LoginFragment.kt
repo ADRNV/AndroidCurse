@@ -12,7 +12,7 @@ import com.example.sampleapp.R
 import com.example.sampleapp.databinding.FragmentLoginBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-private lateinit var binding: FragmentLoginBinding
+
 
 class LoginFragment : Fragment() {
 
@@ -31,8 +31,8 @@ class LoginFragment : Fragment() {
         })
 
         binding.button.setOnClickListener {
-            loginViewModel.getAccoutData(binding.editTextTextPersonName.text.toString(), binding.editTextTextPassword2.text.toString())
-            loginViewModel.getValidation()
+            loginViewModel.getAccoutdata(binding.editTextTextPersonName.text.toString(), binding.editTextTextPassword2.text.toString())
+            loginViewModel.validate()
             binding.editTextTextPersonName.isEnabled = false
             binding.editTextTextPassword2.isEnabled = false
             if(status) {

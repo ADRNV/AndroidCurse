@@ -13,13 +13,9 @@ import com.example.sampleapp.databinding.ActivityNavigationBinding
 
 class NavigationActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityNavigationBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
-
 
     }
 
